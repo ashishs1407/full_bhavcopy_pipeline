@@ -1,3 +1,4 @@
--e . 
 psycopg2
+sqlalchemy
 dbt-postgres
+-e . 
