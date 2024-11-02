@@ -8,12 +8,12 @@ import logging
 # connection to postgress
 engine = create_engine('postgresql+psycopg2://postgres:1407@localhost/DataWarehousex')
 print(engine)
-start_date = '2024-02-21'
+start_date = '2024-03-07'
 
 # pd.read_sql_query('Truncate table public.nse_data', engine)
 
 
-dates = date_window(start_date  )
+dates = date_window(start_date)
 # date_str = datetime.today().strftime('%d%m%Y')
 
 
@@ -37,6 +37,7 @@ for date in dates:
         print(e)
 
 
+engine.dispose()
 
 # sql to df
 # crypto_data_df = pd.read_sql_query('select * from dannys_diner.members', engine)

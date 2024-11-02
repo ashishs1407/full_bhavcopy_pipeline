@@ -12,5 +12,5 @@ headers = {"accept-encoding":"gzip, deflate, br, zstd" ,
 
 session = requests.Session()
 
-data = session.get(url , headers= headers).json()["records"]["data"]
+# data = session.get(url , headers= headers).json()["records"]["data"]
 
